@@ -1,0 +1,1 @@
+arp -a | Out-File -width 1000 -FilePath .\NewNetwork.txt
