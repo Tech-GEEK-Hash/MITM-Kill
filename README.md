@@ -1,0 +1,3 @@
+This script is designed to detect and respond to potential Man-in-the-Middle (MITM) attacks on a network. It runs with admin privileges and monitors changes in the network's ARP table by executing PowerShell scripts. It compares the current ARP data with previously collected data. If a discrepancy is detected, it assumes a MITM attack and responds by flushing the DNS, disabling and re-enabling network interfaces, and clearing data.
+
+The script also checks for MAC address duplication on the network and, if detected, changes the MAC address using the Windows registry. After each iteration, it resets and cleans up temporary files and data.
